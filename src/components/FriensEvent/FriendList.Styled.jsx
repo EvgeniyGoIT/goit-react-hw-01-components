@@ -6,7 +6,7 @@ export const FriendListStyled = styled.ul`
   padding: 10px;
   margin: 0px;
 `;
-export const FriendItem = styled.li`
+export const FriendItemStyled = styled.li`
   display: flex;
   padding: 16px;
   border: 1px solid #888888;

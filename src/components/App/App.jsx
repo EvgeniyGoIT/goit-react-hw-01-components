@@ -1,11 +1,11 @@
-import UserProfile from '../ProfileEvent/App-profile';
-import Statistics from '../StatisticsEvent/App-Statistics';
+import Profile from '../ProfileEvent/Profile';
+import Statistics from '../StatisticsEvent/Statistics';
 import FriendList from '../FriensEvent/FriendList';
 import TransactionHistory from '../TransactionsEvent/Transactions';
-import user from 'user.json';
-import data from 'data.json';
-import friends from 'friends.json';
-import transactions from 'transactions.json';
+import user from '../path/user.json';
+import data from '../path/data.json';
+import friends from '../path/friends.json';
+import transactions from '../path/transactions.json';
 import { Container, InfoConteiner, UserConteiner } from './App.styled';
 
 
@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <Container>
       <UserConteiner>
-      <UserProfile
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
